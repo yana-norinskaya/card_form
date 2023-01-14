@@ -1,0 +1,102 @@
+@media screen and (min-width: 481px){
+  .front{
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    border-radius: 10px;
+    position: absolute;
+    top: 120px;
+    left: 180px;
+    z-index: 10;
+    padding: 20px;
+    color: white;
+    .card_number{
+      font-size: 27px;
+      font-weight: bold;
+      letter-spacing: 5.6px;
+      padding-top: 60px;
+    }
+    .wrap {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+
+      p {
+        font-weight: bold;
+        display: inline-block;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+  .back{
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 447px;
+    height: 245px;
+    border-radius: 10px;
+    top: 400px;
+    left: 280px;
+    z-index: 10;
+    padding: 20px;
+    color: white;
+    span{
+      font-weight: bold;
+      display: inline-block;
+      letter-spacing: 1.5px;
+      transform: translate(320px, 90px);
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 480px){
+  .front{
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 170px;
+    border-radius: 10px;
+    position: absolute;
+    top: 187px;
+    left: 18px;
+    z-index: 9;
+    padding: 22px;
+    color: white;
+    .card_number{
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 5.6px;
+      padding-top: 20px;
+    }
+    .wrap {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+
+      p {
+        font-weight: bold;
+        display: inline-block;
+        letter-spacing: 1.5px;
+        font-size: 10px;
+      }
+    }
+  }
+  .back{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 300px 170px;
+    width: 300px;
+    height: 170px;
+    border-radius: 10px;
+    top: 74px;
+    left: 65px;
+    z-index: 8;
+    padding: 20px;
+    color: white;
+    span{
+      font-weight: bold;
+      display: inline-block;
+      letter-spacing: 1.5px;
+      transform: translate(213px, 52px);
+      font-size: 13px;
+    }
+  }
+}
+

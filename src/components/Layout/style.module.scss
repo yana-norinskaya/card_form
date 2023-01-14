@@ -1,0 +1,42 @@
+@media screen and (min-width: 481px){
+  .wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    height: 100vh;
+    width: 1300px;
+    position: relative;
+    z-index: 0;
+    align-items: center;
+    justify-content: space-between;
+    .desktop{
+      display: block;
+      object-fit: cover;
+      z-index: 0;
+    }
+    .mobile{
+      display: none;
+    }
+  }
+}
+@media (min-width:320px) and (max-width: 480px){
+  .wrap{
+    display: grid;
+    grid-template-columns: 480px;
+    height: 100%;
+    max-width: 480px;
+    position: relative;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    .desktop{
+      display: none;
+    }
+    .mobile{
+      display: block;
+      z-index: 0;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+

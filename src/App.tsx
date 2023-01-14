@@ -1,25 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import {FrontCard, BackCard, Form, Success, Layout} from "./components";
 
 function App() {
+    const [success, setSuccess] = useState(false);
+
+    const [name, setName] = useState("");
+    const [number, setNumber] = useState("");
+    const [month, setMonth] = useState("");
+    const [yearName, setYear] = useState("");
+    const [cvcName, setCvcName] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+          <FrontCard name={name}
+                     number={number}
+                     month={month}
+                     year={yearName}
+                     />
+
+          <BackCard cvc={cvcName}/>
+
+          <Layout>
+              {success
+                  ? <Success setSuccess={setSuccess}/>
+                  : <Form setName={setName}
+                          setNumber={setNumber}
+                          setMonth={setMonth}
+                          setYear={setYear}
+                          setSuccess={setSuccess}
+                          setCvcName={setCvcName}/>}
+
+          </Layout>
+      </>
   );
 }
 
